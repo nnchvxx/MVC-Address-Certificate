@@ -1,0 +1,340 @@
+﻿@model CertificateModel
+
+
+<div>
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LmkKey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Postcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingReferenceNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentOperationalRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr1OperationalRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr2OperationalRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OperationalRatingBand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElectricCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeatingCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RenewablesCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InspectionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Local_authority)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Constituency)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.County)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LodgementDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainBenchmark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainHeatingFuel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtherFuel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialEnergyUses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RenewableSources)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalFloorArea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnnualThermalFuelUsage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypicalThermalFuelUsage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnnualElectricalFuelUsage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypicalElectricalFuelUsage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RenewablesFuelThermal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RenewablesElectrical)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr1ElectricityCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr2ElectricityCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr1HeatingCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr2HeatingCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr1RenewablesCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yr2RenewablesCo2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirconPresent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AirconKwRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstimatedAirconKwRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcInspectionCommissioned)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingEnvironment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocalAuthorityLabel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConstituencyLabel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostTown)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NominatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrAssessmentEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LodgementDatetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OccupancyLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Uprn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UprnSource)
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LmkKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Address1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Address2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Address3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Postcode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.BuildingReferenceNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.CurrentOperationalRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr1OperationalRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr2OperationalRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.OperationalRatingBand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.ElectricCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.HeatingCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.RenewablesCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.PropertyType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.InspectionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Local_authority)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Constituency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.County)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LodgementDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.MainBenchmark)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.MainHeatingFuel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.OtherFuel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.SpecialEnergyUses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.RenewableSources)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.TotalFloorArea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.AnnualThermalFuelUsage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.TypicalThermalFuelUsage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.AnnualElectricalFuelUsage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.TypicalElectricalFuelUsage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.RenewablesFuelThermal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.RenewablesElectrical)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr1ElectricityCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr2ElectricityCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr1HeatingCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr2HeatingCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr1RenewablesCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Yr2RenewablesCo2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.AirconPresent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.AirconKwRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.EstimatedAirconKwRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.AcInspectionCommissioned)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.BuildingEnvironment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.BuildingCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LocalAuthorityLabel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.ConstituencyLabel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.PostTown)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.NominatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.OrAssessmentEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LodgementDatetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.OccupancyLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Uprn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.UprnSource)
+            </td>
+        </tr>
+</div>
+<div>
+    <div>
+        @Html.ActionLink("Back", "Index", "Address")
+    </div>
+    <div>
+        @{
+            if (Model.HasRecommendation)
+            {
+                @Html.ActionLink("View recommendation", "Recommendation", new { lmkKey = Model.LmkKey });
+            }
+        }
+    </div>
+</div>
+

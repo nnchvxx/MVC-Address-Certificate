@@ -1,0 +1,57 @@
+﻿@model IEnumerable<CertificateModel>
+@{
+    ViewData["Title"] = "Info";
+}
+
+<div>
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Postcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingReferenceNumber)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Postcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuildingReferenceNumber)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { lmkKey = item.LmkKey })
+                </td>
+            </tr>
+        }
+</div>
+
+<div>
+
+    @{
+        var pageFrom = ViewBag.PageFrom;
+        var result = int.TryParse(pageFrom, out int intValuePageFrom);
+        if (Model.Count() == 25)
+        {
+            if (intValuePageFrom != 0)
+            {
+                @Html.ActionLink("previous page", "Info", new { inputToken = ViewBag.Token, from = intValuePageFrom - 25 })
+            }
+            <br />
+            @Html.ActionLink("next page", "Info", new { inputToken = ViewBag.Token, from = intValuePageFrom + 25 })
+            <br />
+            @Html.ActionLink("back", "Index", "Address")
+        }
+    }
+</div>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<RecommendationModel>
+@{
+    ViewData["Title"] = "Recommendation";
+}
+
+
+<div>
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LmkKey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImprovementItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImprovementSummaryText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImprovementDescrText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImprovementId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImprovementIdText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IndicativeCost)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LmkKey)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImprovementItem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImprovementSummaryText)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImprovementDescrText)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImprovementId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImprovementIdText)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IndicativeCost)
+                </td>
+            </tr>
+        }
+</div>
+
+<div>
+    @Html.ActionLink("back", "Index", "Address")
+</div>
